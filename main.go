@@ -1,6 +1,11 @@
 // Read and Write JSON only.
 package main
 
+import (
+	"github.com/iris-contrib/gateway"
+	`github.com/kataras/iris/v12`
+)
+
 func main() {
     app := iris.New()
     app.OnErrorCode(iris.StatusNotFound, notFound)
